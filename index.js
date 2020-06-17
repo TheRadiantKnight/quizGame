@@ -23,7 +23,7 @@ function updateAnswers() {
     for(let i=0; i<question.answers.length; i++)
     {
       $('.js-options').append(`
-          <input type = "checkbox" name="options" id="option${i+1}" value= "${question.answers[i]}" tabindex ="${i+1}"> 
+          <input type = "radio" name="options" id="option${i+1}" value= "${question.answers[i]}" tabindex ="${i+1}"> 
           <label for="option${i+1}"> ${question.answers[i]}</label> <br/>
           <span id="js-r${i+1}"></span>
       `);
@@ -133,7 +133,7 @@ function handleResults() {
         STORE.currentQuestion++;
         $("#js-score").text(`Score: ${STORE.score}/${STORE.questions.length}`);
         $('#answer').hide();
-        $("input[type=checkbox]").attr('disabled', true);
+        $("input[type=radio]").attr('disabled', true);
         $('#next-question').show();
       });
 

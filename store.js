@@ -32,7 +32,7 @@ const STORE = {
                 answers: [
                     "Atom League & Neptune League",
                     "American League & National League",
-                    "A-League & N-League",
+                    "AllStar League & NoWorld League",
                     "Amigos League & Navaho League"
                 ],
                 answer: "American League & National League"

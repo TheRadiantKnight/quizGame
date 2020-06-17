@@ -3,13 +3,22 @@
 
 @media only screen and (min-width: 320px) {
     .col-12 {
-      width: 100%;
-    }
+    width: 100%;   
+     }  
+  }
 
-    .row {     
-      padding-left: 1em;
-      padding-right: 1em;
-      margin: 0 auto;
+  @media only screen and (min-width: 640px) {
+    .col-12 {
+    width: 100%;   
+     }  
+
+     header h1 {
+      font-family: "Roboto", sans-serif;
+      font-size: 4em;
+      line-height: 1;
+      height: 200px;
+      top:24px;
+      text-align: center;
     }
   }
  /*  
@@ -21,8 +30,8 @@
   
   .row {
     max-width: 1000px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 0 auto;
   }
   
@@ -38,8 +47,8 @@
   
   .col-12 {
     float: left;
-    padding-left: 1.04166666%;
-    padding-right: 1.04166666%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
   
   .col-12 {
@@ -62,7 +71,7 @@
   header {
     margin-top: 25px;
     height:80px;
-    color: white;
+    color: turquoise;
     margin-bottom: 55px;
   }
   
@@ -95,6 +104,7 @@
   .question-and-score li {
     display: inline-block;
     padding:0 2%;
+    color: turquoise;
   }
   
   button {
@@ -114,7 +124,7 @@
   
   fieldset {
     width:80%;
-    padding: 40px;
+    padding: 0;
     margin:0 auto;
     background:rgba(255, 255, 255, 0.8);
     border-radius: 10px;
@@ -162,7 +172,13 @@
   }
   
   .question-form button {
-    float:right;
+    
+    margin-top: 1.5em;
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   
   button:hover:enabled,
@@ -172,6 +188,7 @@
     -moz-transition: background 0.1s;
     -o-transition: background 0.1s;
     transition: background 0.1s;
+    
   }
   
   button:disabled {
